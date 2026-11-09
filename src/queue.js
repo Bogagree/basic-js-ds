@@ -22,7 +22,7 @@ class Queue {
   }
 
   enqueue(value) {
-    const node = new ListNode(value);
+    const node = { ...new ListNode(value) };
 
     if (!this.head) {
       this.head = node;
